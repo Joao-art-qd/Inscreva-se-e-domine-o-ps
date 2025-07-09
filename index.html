@@ -9,6 +9,72 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Barlow', sans-serif; color: white; background: #000; line-height: 1.6; }
+
+    header {
+      background: url('astro.png') no-repeat center center / cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Mudança aqui */
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px 0; /* Mudança aqui */
+    }
+    header h2 {
+      font-family: 'Oswald', sans-serif; font-size: 1.2em; text-transform: uppercase; margin-bottom: 10px;
+    }
+    header h1 {
+      font-family: 'Oswald', sans-serif; font-size: 2.8em; max-width: 800px; text-transform: uppercase; margin-bottom: 30px;
+    }
+    .btn {
+      background: #38d1bc; color: white; padding: 15px 30px; font-size: 1.1em; text-decoration: none;
+      border-radius: 5px; transition: background 0.3s ease;
+    }
+    .btn:hover { background: #2bb3a1; }
+    section {
+      padding: 60px 20px;
+      background: #111;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2em; margin-bottom: 40px; font-family: 'Oswald', sans-serif;
+    }
+    .features {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1100px; margin: auto;
+    }
+    .feature {
+      background: #1c1c1c; padding: 25px; border-radius: 10px; width: 280px; transition: transform 0.3s ease;
+    }
+    .feature:hover { transform: translateY(-5px); }
+    .feature h3 {
+      color: #38d1bc; font-size: 1.2em; text-transform: uppercase; font-family: 'Oswald', sans-serif;
+    }
+    iframe {
+      border-radius: 10px;
+      max-width: 90vw;
+    }
+    footer {
+      padding: 20px; background: #000; text-align: center; font-size: 0.9em; color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>- Edição Facilitada -</h2>
+    <h1>O método simplificado de edição pelo Photoshop</h1>
+    <a class="btn" href="inscricao.html">Quero me inscrever</a>
+  </header>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edição Facilitada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Barlow', sans-serif; color: white; background: #000; line-height: 1.6; }
     header {
       background: url('astro.png') no-repeat center center / cover;
       height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -58,6 +124,34 @@
     <h1>O método simplificado de edição pelo Photoshop</h1>
     <a class="btn" href="inscricao.html">Quero me inscrever</a>
   </header>
+
+  <section>
+    <h2 class="section-title">O que você vai aprender</h2>
+    <div class="features">
+      <div class="feature"><h3>Conhecendo o Photoshop</h3></div>
+      <div class="feature"><h3>Edição Básica</h3></div>
+      <div class="feature"><h3>Manipulação de Imagem</h3></div>
+      <div class="feature"><h3>Aplicando Add-ons</h3></div>
+      <div class="feature"><h3>Presets de Referência</h3></div>
+    </div>
+  </section>
+
+  
+<section style="
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+              url('espacial.png') no-repeat center center / cover;
+  padding: 60px 20px; text-align: center;
+">
+  <h2 class="section-title">Assista ao vídeo</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/XHOmBV4js_E" frameborder="0" allowfullscreen></iframe>
+</section>
+
+
+  <footer>
+    © 2025 Edição Facilitada. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
 
   <section>
     <h2 class="section-title">O que você vai aprender</h2>
